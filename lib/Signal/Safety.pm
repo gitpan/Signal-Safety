@@ -1,6 +1,6 @@
 package Signal::Safety;
 {
-  $Signal::Safety::VERSION = '0.001';
+  $Signal::Safety::VERSION = '0.002';
 }
 use 5.008001;
 use strict;
@@ -24,17 +24,18 @@ Signal::Safety - Enable or disable safe signal handling
 
 =head1 VERSION
 
-version 0.001
-
-=head1 DESCRIPTION
-
-This module exposes perl's signal safety feature. It allows you to temporarily turn off safe signal handling in a user-friendly way.
+version 0.002
 
 =head1 SYNOPSIS
+
  {
      local $Signal::Safety = 0;
      do_something_scary():
  }
+
+=head1 DESCRIPTION
+
+This module exposes perl's signal safety feature. It allows you to temporarily turn off safe signal handling in a user-friendly way.
 
 =head1 AUTHOR
 
